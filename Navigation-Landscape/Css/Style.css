@@ -149,7 +149,7 @@ html {
   }
 
   .menu-list {
-    display: block;
+    display: none;
     position: absolute;
     background-color: var(--bgColorRes);
     width: 100%;
