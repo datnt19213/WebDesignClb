@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --txtColor1: #fff;
+  --bgColor1: #00cc66; /* #.. .. .. ==> red green blue ==> RGB  #fff  #000*/
+}
+
+html {
+  font-size: 100%;
+}
+
+.ft-link {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  width: 4.6vh;
+  height: 4.6vh;
+  margin: 0vh 1.3vh;
+  cursor: pointer;
+}
+.ft-link-tw {
+  background-color: var(--txtColor1);
+  border-radius: 4.6vh;
+}
+
+.ft-header {
+  background-color: var(--bgColor1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3vh 6vh;
+  border-bottom: 1px solid var(--txtColor1);
+}
+
+.ft-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--txtColor1);
+  pointer-events: none;
+}
+
+.ft-body {
+  background-color: var(--bgColor1);
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  padding: 3vh 6vh;
+  border-bottom: 1px solid var(--txtColor1);
+}
+
+.ft-bd-support,
+.ft-bd-about,
+.ft-bd-contact,
+.ft-bd-subscribe {
+  display: block;
+  color: var(--txtColor1);
+}
+.ft-item-spacing {
+  margin: 1.6vh 0vh;
+}
+
+.ft-support-item,
+.ft-about-item,
+.ft-contact-item {
+  margin: 1.6vh 0vh;
+  cursor: pointer;
+}
+
+.ft-support-item:hover,
+.ft-about-item:hover,
+.ft-contact-item:hover {
+  text-decoration: underline;
+}
+
+.ft-bd-subscribe {
+  display: block;
+}
+
+.ft-subs-inputemail {
+  outline: none;
+  outline: 1px solid var(--txtColor1);
+  border: none;
+  border: 1px solid var(--txtColor1);
+  background-color: transparent;
+  height: 3.6vh;
+  width: 30vh;
+  color: var(--txtColor1);
+  padding: 0.3vh 1.3vh;
+  font-size: 1em;
+  border-radius: 0.6vh;
+  margin: 3vh 0vh;
+}
+
+.ft-submit-btn {
+  display: block;
+  font-size: 1em;
+  color: var(--txtColor1);
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--txtColor1);
+  padding: 0.6vh 3vh;
+  border-radius: 0.6vh;
+  cursor: pointer;
+}
+
+.ft-submit-btn:hover {
+  background-color: var(--txtColor1);
+  border: 1px solid var(--bgColor1);
+  color: var(--bgColor1);
+  transition: 0.3s;
+}
+
+.ft-bot {
+  background-color: var(--bgColor1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3vh 6vh;
+  color: var(--txtColor1);
+  text-decoration: underline;
+}
+
+.ft-copyright,
+.ft-license {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  .ft-header {
+    display: block;
+  }
+  .ft-link {
+    margin: 1.9vh 0vh;
+  }
+  .ft-body {
+    display: block;
+  }
+  .ft-bd-support,
+  .ft-bd-about,
+  .ft-bd-contact,
+  .ft-bd-subscribe {
+    margin: 3vh 0vh;
+  }
+}
