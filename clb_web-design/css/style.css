@@ -12,6 +12,7 @@ html {
 
 :root {
   --txt-color: #fff;
+  --txt-color2: #333;
   --border: #fff;
   --border-2: #fd2b1d;
   --shadow: rgba(230, 230, 230, 0.6);
@@ -43,7 +44,7 @@ body {
   align-items: center;
   right: 0;
   position: fixed;
-  width: 60%;
+  width: 70%;
   height: fit-content;
   background-color: var(--transparent);
   border-bottom: 3px solid var(--border);
@@ -92,6 +93,7 @@ body {
 .txt-menu {
   width: 100%;
   font-size: 1.3em;
+  user-select: none;
   color: var(--txt-color);
 }
 
@@ -110,8 +112,7 @@ body {
   height: 100%;
   text-decoration: none;
   list-style: none;
-  width: 100%;
-  height: fit-content;
+  width: 120%;
   position: relative;
 }
 
@@ -185,6 +186,24 @@ body {
   margin-top: 3vh;
   padding: 5vh;
   border-top: 1px solid var(--border-3);
+}
+
+@media screen and (max-width: 1100px) {
+  .menu-list {
+    display: block;
+    width: 60%;
+  }
+  .menu {
+    display: block;
+    margin-top: 13vh;
+    width: fit-content;
+    border-right: 3px solid var(--border);
+    border-bottom: none;
+  }
+  .menu-box-scroll {
+    top: -8vh;
+    right: -3vh;
+  }
 }
 
 @keyframes rotate1 {
