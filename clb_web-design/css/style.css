@@ -116,16 +116,16 @@ body {
   position: relative;
 }
 
-.menu-item:hover > .menu-item-txt {
-  border-bottom: 3px solid var(--border-2);
-  color: var(--border-2);
-  transition: 0.3s;
-}
-
 .menu-item-txt {
   padding: 5vh;
   font-size: 1.3em;
   color: var(--txt-color);
+}
+
+.menu-item:hover > .menu-item-txt {
+  border-bottom: 3px solid var(--border-2);
+  color: var(--border-2);
+  transition: 0.3s;
 }
 
 .image-show-out {
