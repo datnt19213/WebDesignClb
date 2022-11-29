@@ -23,6 +23,15 @@ jQuery(document).ready(function () {
         $(".menu").css("border-right", "3px solid var(--border)");
         $(".menu-item-txt").css("color", "var(--txt-color2)");
       }
+      $(".menu-list").css("opacity", "0");
+      $(".menu-list").css("visibility", "hidden");
+      $(".menu").css("border-bottom", "none");
+      $(".menu").css("border-right", "none");
+      $(".menu").css("background-color", "transparent");
+      $(".menu-box-scroll").css("animation", "rotate1 0.3s linear");
+      $(".menu-list").css("transition", "0.5s");
+
+      i++;
     }
   });
 
@@ -75,19 +84,11 @@ jQuery(document).ready(function () {
 
     i++;
 
-    // if (pos < 500) {
-    //   $(".scrollTop").css("display", "none");
-    //   $(".menu").css("background-color", "var(--txt-color2)");
-    //   $(".menu").css("border-bottom", "none");
-    //   $(".menu").css("border-right", "3px solid var(--border)");
-    //   $(".menu-item-txt").css("color", "var(--txt-color)");
-    // } else {
-    //   $(".scrollTop").css("display", "block");
-    //   $(".menu").css("background-color", "var(--transparent)");
-    //   $(".menu").css("border-bottom", "none");
-    //   $(".menu").css("border-right", "3px solid var(--border)");
-    //   $(".menu-item-txt").css("color", "var(--txt-color2)");
-    // }
+    if (pos > 500) {
+      $(".scrollTop").css("display", "block");
+    } else {
+      $(".scrollTop").css("display", "none");
+    }
   });
 
   $(".scrollTop").click(function () {
