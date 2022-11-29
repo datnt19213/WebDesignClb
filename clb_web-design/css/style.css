@@ -173,6 +173,7 @@ body {
   border-radius: 5vh;
   width: 30vh;
   margin-left: 50%;
+  user-select: none;
   transform: translateX(-50%);
   margin-top: 80vh;
   cursor: pointer;
@@ -203,6 +204,14 @@ body {
   .menu-box-scroll {
     top: -8vh;
     right: -3vh;
+  }
+  .intro-2 {
+    display: none;
+  }
+  .intro-pharse {
+    padding: 8vh;
+    margin-top: 15vh;
+    display: block;
   }
 }
 
