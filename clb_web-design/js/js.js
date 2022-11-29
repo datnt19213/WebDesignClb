@@ -4,6 +4,7 @@ var size = 0;
 var menuStatus = 0;
 
 jQuery(document).ready(function () {
+  size = screen.width;
   $(window).resize(function () {
     size = $(window).width();
     if (menuStatus === 0) {
@@ -50,7 +51,6 @@ jQuery(document).ready(function () {
 
   $(".menu-box-scroll").click(function () {
     if (i % 2 === 0) {
-      //   $(".menu-list").css("transform", "translateX(100vh)");
       $(".menu-list").css("opacity", "0");
       $(".menu-list").css("visibility", "hidden");
       $(".menu").css("border-bottom", "none");
