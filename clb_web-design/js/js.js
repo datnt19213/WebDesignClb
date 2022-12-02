@@ -3,6 +3,46 @@ var pos = 0;
 var size = 0;
 
 jQuery(document).ready(function () {
+  $(".i1").click(function () {
+    $(".home").css("display", "flex");
+    $(".leader").css("display", "none");
+    $(".event").css("display", "none");
+    $(".project").css("display", "none");
+    $(".attend").css("display", "none");
+    $("html").animate({scrollTop: 800}, 500);
+  });
+  $(".i2").click(function () {
+    $(".home").css("display", "none");
+    $(".leader").css("display", "block");
+    $(".event").css("display", "none");
+    $(".project").css("display", "none");
+    $(".attend").css("display", "none");
+    $("html").animate({scrollTop: 800}, 500);
+  });
+  $(".i3").click(function () {
+    $(".home").css("display", "none");
+    $(".leader").css("display", "none");
+    $(".event").css("display", "block");
+    $(".project").css("display", "none");
+    $(".attend").css("display", "none");
+    $("html").animate({scrollTop: 800}, 500);
+  });
+  $(".i4").click(function () {
+    $(".home").css("display", "none");
+    $(".leader").css("display", "none");
+    $(".event").css("display", "none");
+    $(".project").css("display", "block");
+    $(".attend").css("display", "none");
+    $("html").animate({scrollTop: 800}, 500);
+  });
+  $(".i5").click(function () {
+    $(".home").css("display", "none");
+    $(".leader").css("display", "none");
+    $(".event").css("display", "none");
+    $(".project").css("display", "none");
+    $(".attend").css("display", "block");
+    $("html").animate({scrollTop: 800}, 500);
+  });
   size = $(document).width();
   $(window).resize(function () {
     size = $(window).width();

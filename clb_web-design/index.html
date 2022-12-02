@@ -20,29 +20,36 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/homeStyle.css" />
     <script src="./js/js.js"></script>
+    
+    <!--Swiper css-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/LeadersStyle.css">
+    <link rel="stylesheet" href="./css/Eventstyle.css">
   </head>
   <body>
     <div class="wrapper">
       <div class="block-header">
         <div class="menu">
           <ul class="menu-list">
-            <a href="" class="menu-item">
+            <a href="##" class="menu-item i1">
               <li class="menu-item-txt">Home</li>
               <span class="menu-line"></span>
             </a>
-            <a href="" class="menu-item">
+            <a href="##" class="menu-item i2">
               <li class="menu-item-txt">Leaders</li>
               <span class="menu-line"></span>
             </a>
-            <a href="" class="menu-item">
+            <a href="##" class="menu-item i3">
               <li class="menu-item-txt">Events</li>
               <span class="menu-line"></span>
             </a>
-            <a href="" class="menu-item">
+            <a href="##" class="menu-item i4">
               <li class="menu-item-txt">Projects</li>
               <span class="menu-line"></span>
             </a>
-            <a href="" class="menu-item">
+            <a href="https://itclubofgwu.site/" class="menu-item i5">
               <li class="menu-item-txt">Attendance</li>
               <span class="menu-line"></span>
             </a>
@@ -82,17 +89,38 @@
         </div>
       </div>
 
-      <div class="home">
+      <!-- Home site -->
+      <div class="home" style="display:flex;">
         <div class="col-1">
-          <p class="info-tb-content">1. Introduction</p>
-          <p class="info-tb-content">2. What is IT Club?</p>
-          <p class="info-tb-content">3. Members Details</p>
-          <p class="info-tb-content">4. Cultures</p>
-          <p class="info-tb-content">5. The impacts of IT Club</p>
+          <p class="info-tb-content">
+            <a href="#content-1" style="text-decoration: none; color: #333"
+              >1. Introduction</a
+            >
+          </p>
+          <p class="info-tb-content">
+            <a href="#content-2" style="text-decoration: none; color: #333"
+              >2. What is IT Club?</a
+            >
+          </p>
+          <p class="info-tb-content">
+            <a href="#content-3" style="text-decoration: none; color: #333"
+              >3. Members Details</a
+            >
+          </p>
+          <p class="info-tb-content">
+            <a href="#content-4" style="text-decoration: none; color: #333"
+              >4. Cultures</a
+            >
+          </p>
+          <p class="info-tb-content">
+            <a href="#content-5" style="text-decoration: none; color: #333"
+              >5. The impacts of IT Club</a
+            >
+          </p>
         </div>
         <div class="col-2">
           <div class="infor-session">
-            <p class="info-content-title">1. Introduction</p>
+            <p id="content-1" class="info-content-title">1. Introduction</p>
             <p class="info-content">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Reprehenderit ipsam quidem non at, molestiae eum iusto reiciendis
@@ -101,7 +129,7 @@
             </p>
           </div>
           <div class="infor-session">
-            <p class="info-content-title">2. What is IT Club?</p>
+            <p id="content-2" class="info-content-title">2. What is IT Club?</p>
             <p class="info-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatum numquam fugit dolorum? Alias sint assumenda veniam
@@ -113,7 +141,7 @@
             </p>
           </div>
           <div class="infor-session">
-            <p class="info-content-title">3. Members Details</p>
+            <p id="content-3" class="info-content-title">3. Members Details</p>
             <p class="info-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
               tenetur omnis sequi dolor sit praesentium impedit accusantium
@@ -136,7 +164,7 @@
             </p>
           </div>
           <div class="infor-session">
-            <p class="info-content-title">4. Cultures</p>
+            <p id="content-4" class="info-content-title">4. Cultures</p>
             <p class="info-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
               inventore non! Deserunt minima distinctio totam dolor consequuntur
@@ -160,7 +188,9 @@
             </p>
           </div>
           <div class="infor-session">
-            <p class="info-content-title">5. The impacts of IT Club</p>
+            <p id="content-5" class="info-content-title">
+              5. The impacts of IT Club
+            </p>
             <p class="info-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo non
               ducimus minus minima, nisi repellendus. Facere vel consequatur
@@ -178,16 +208,311 @@
           </div>
         </div>
       </div>
-
-      <div class="leader"></div>
-
-      <div class="event"></div>
-
-      <div class="attend"></div>
+      <!-- Leader site -->
+      <div class="leader" style="display:none;">
+        <div class=" slide-container swiper">  
+          <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                  <!--1-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/1.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"> <strong>NGUYEN TRUONG THANH</strong>  <br>Event Department</h2>
+                          
+                          <p class="description">I’m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can’t handle me at my worst, then you sure as hell don’t deserve me at my best.</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <!--2-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/2.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>LE NGUYEN KIM YEN</strong>  <BR> HR Department</h2>
+                          <p class="description">I’m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can’t handle me at my worst, then you sure as hell don’t deserve me at my best.</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+  
+                  <!--3-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/3.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>NGUYEN THI HIEN </strong> <BR> Design Department</h2>
+                          <p class="description">You’ve gotta dance like there’s nobody watching, love like you’ll never be hurt, sing like there’s nobody listening, and live like it’s heaven on earth.</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <!--4-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/4.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>NGUYEN HOANG KHANG</strong><BR>Design Department</h2>
+                          <p class="description">Never be bullied into silence. Never allow yourself to be made a victim. Accept no one’s definition of your life; define yourself. </p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+  
+                  <!--5-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/5.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>NGUYEN HOAI KIM NGAN</strong><BR>Photographer</h2>
+                          <p class="description"> You can’t go around building a better world for people. Only people can build a better world for people. Otherwise it’s just a cage.</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <!--6-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/6.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><STRong>LE QUOC ANH</STRong> <BR> Maketing Department</h2>
+                          <p class="description">Time means a lot to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and simplifying. If you love life, don’t waste time, for time is what life is made up of.</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <!--7-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/7.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>NGUYEN MINH KHANG</strong><BR>Relationship Department</h2>
+                          <p class="description">Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma, which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. </p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <!--8-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/8.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>THACH NGOC TRUNG</strong><BR> Chapter Lead</h2>
+                          <p class="description">3 most difficult things to do in the world: You can’t count your hair. You can’t wash your eyes with soap. You can’t breathe when your tongue is out. Now please put your tongue back inside.</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <!--9-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/9.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>NGUYEN QUOC THONG</strong><BR>Sub-Lead</h2>
+                          <p class="description">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <!--10-->
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/10.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>TRAN PHUOC HAO</strong><BR> Web Department</h2>
+                          <p class="description">When one door closes, another opens. But we often look so long and so regretfully upon the closed door that we do not see the one that has opened for us.</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <div class="card swiper-slide" >
+                      <div class="image-content">
+                          <span class="overlay"></span>
+  
+                          <div class="card-image">
+                              <img src="./img/11.jpg" alt="" class="card-img">
+                          </card-image></div>
+                      </div>
+  
+                      <div class="card-content">
+                          <h2 class="name"><strong>NGUYEN NGOC NHAN </strong><BR>Mobie Department</h2>
+                          <p class="description">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes</p>
+                      
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+      </div>
+      </div>
+      <!-- Event site -->
+      <div class="event" style="display:none;">
+        <section id="blog">
+          <div class="blog-heading">
+              <h3>Upcoming Events</h3>
+          </div>
+          <div class="blog-container">
+              <!--box1-->
+              <div class="blog-box">
+                  <!--img--->
+                  <div class="blog-img"><img src="./img2/4.jpg" alt="Blog"></div>
+                  <!--text-->
+                  <div class="blog-text">
+                      <span>Article</span>
+                      <a href="#" class="blog-title">HOT EVENTS</a>
+                      <p>Exciting events are about to take place soon. Let's welcome it together</p>
+                      <a href="#">Read more</a>
+                  </div>
+              </div>
+              <!--box2-->
+              <div class="blog-box">
+                  <!--img--->
+                  <div class="blog-img"><img src="./img2/4.jpg" alt="Blog"></div>
+                  <!--text-->
+                  <div class="blog-text">
+                      <span>Article</span>
+                      <a href="#" class="blog-title">HOT EVENTS</a>
+                      <p>Exciting events are about to take place soon. Let's welcome it together</p>
+                      <a href="#">Read more</a>
+                  </div>
+              </div>
+              <!--box3-->
+              <div class="blog-box">
+                  <!--img--->
+                  <div class="blog-img"><img src="./img2/4.jpg" alt="Blog"></div>
+                  <!--text-->
+                  <div class="blog-text">
+                      <span>Article</span>
+                      <a href="#" class="blog-title">HOT EVENTS</a>
+                      <p>Exciting events are about to take place soon. Let's welcome it together</p>
+                      <a href="#">Read more</a>
+                  </div>
+              </div>
+          </div>
+          <div class="blog-heading">
+              <h3>Event Done</h3>
+          </div>
+          <div class="blog-container">
+              <!--box1-->
+              <div class="blog-box">
+                  <!--img--->
+                  <div class="blog-img"><img src="./img2/2.png" alt="Blog"></div>
+                  <!--text-->
+                  <div class="blog-text">
+                      <span>Article</span>
+                      <a href="#event1.php" class="blog-title">Workshop: LEVEL UP YOUR CAREER</a>
+                      <p>We all had an amazing workshop. Besides, we showed the solidarity of our club and the enthusiastic dynamism at IUH University created laughter and
+                           received love from all of you. Thank you everyone and see you in Can Tho.</p>
+                      <a href="#event1.php">Read more</a>
+                  </div>
+              </div>
+              <!--box2-->
+              <div class="blog-box">
+                  <!--img--->
+                  <div class="blog-img"><img src="./img2/1.png" alt="Blog"></div>
+                  <!--text-->
+                  <div class="blog-text">
+                      <span>Article</span>
+                      <a href="#" class="blog-title">Workshop: LEVEL UP YOUR CAREER</a>
+                      <p>We all had an amazing workshop. Besides, we showed the solidarity of our club and the enthusiastic dynamism at IUH University created laughter and
+                           received love from all of you. Thank you everyone and see you in Can Tho.</p>
+                      <a href="#">Read more</a>
+                  </div>
+              </div>
+              <!--box3-->
+              <div class="blog-box">
+                  <!--img--->
+                  <div class="blog-img"><img src="./img2/7.jpg" alt="Blog"></div>
+                  <!--text-->
+                  <div class="blog-text">
+                      <span>Article</span>
+                      <a href="#event1.php" class="blog-title">Workshop: LEVEL UP YOUR CAREER</a>
+                      <p>We all had an amazing workshop. Besides, we showed the solidarity of our club and the enthusiastic dynamism at IUH University created laughter
+                           and received love from all of you. Thank you everyone and see you in Can Tho.</p>
+                      <a href="#event1.php">Read more</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      </div>
+      <!-- Project site -->
+      <div class="project" style="display:none;"></div>
+      <!-- Attendance site -->
+      <div class="attend" style="display:none;"></div>
 
       <div class="block-footer">
         <p class="footer-copy">IT Club Copyright&copy; 2022</p>
       </div>
     </div>
   </body>
+  <!--Swiper JS-->
+  <script src="./js/swiper-bundle.min.js"></script>
+
+  <!--Javacrip-->
+  <script src="./js/script.js"></script>
 </html>
